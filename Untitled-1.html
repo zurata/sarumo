@@ -1,0 +1,189 @@
+<!DOCTYPE html><HTML>
+  <meta charset="UTF-8>"
+  <body style="font-size: 20px;">
+  <script>
+  
+  //式と演算子いついて
+  //代入演算子 
+  //  =  代入
+  //  +=　加算代入
+  //  -=　減算代入
+  //  *=  乗算代入
+  //  /=  徐算代入
+  
+  //  X = x + 1
+  //  X++
+  // x = x + 100;
+  // x += 100;
+  // x += y;    
+
+
+  //  算術演算子
+  //  四則演算 +-*/
+  //  ＋足し算（加算）
+  //  ー引き算
+  //  *掛け算
+  //  ／割り算
+  //  %あまり
+  //  ++インクリメント
+  //  --デクリメント
+  //  ー単項符号反転演算子
+  //  **べき乗（累乗）指数
+
+//BMI(肥満指数)
+
+let myName = "さるも";
+let myHeight = 170;
+let myWeight =53;
+
+//let myBMI = myWeight / ((myHeight/100)*(myheight/100));
+let myBMI = myWeight / (myHeight*myHeight/10000); 
+  
+
+
+
+  //変数につして
+  //データ→入れ物
+  //変数の宣言
+  // var, let, const
+
+   
+
+  //数値と文字列（""で囲うと文字列）
+   
+   
+  //変数名　ルール
+  //半角アルファベット
+  //半角の数字（先頭は除く）
+  //半角の＿（アンダースコア）
+  //命名規則
+
+  //おはようを表示
+  for ( let i=0 ; i<5 ;i++)
+  {
+  document.write(myName + ",おはよう<BR>");
+  document.write("身長は"+myHeight+"cm<BR>");
+  document.write("体重は"+myWeight+"kg<BR>");
+  document.write("あなたのBMIは"+myBMI+"点です。<BR>");
+  document.write(myName + ",こんにちは<BR>");
+  document.write("<BR>");
+
+      myWeight +=5;
+      myBMI = myWeight / (myHeight/100)**2;
+  }
+    if (myBMI<18.5)
+    {
+      document.write("ガリガリですやん<BR>");
+    }
+
+ 
+
+    //条件文
+
+//if文
+
+//if(条件式)
+//｛
+//    命令文；
+//    命令文；
+//    命令文；
+// ｝
+ 
+ //比較演算子
+ //＝＝等しい
+ //!=等しくない
+ //>大きい
+ //>=以上
+ //＜小さい
+ //<=以下
+
+// if(x==1){......} ｘが１だったら中を実行します。
+// if(!=){....} 1以外に実行
+
+// if ....else文
+// if(x==1)
+//{
+//  y=1;
+//}
+//else if(x==2)
+//{
+//  y=3;
+//}
+//else
+//{
+//  y=2; 
+//}
+
+// if(x==1) y=1;
+// else if(x==2)
+// y=2;
+
+//論理演算子
+//  && 且つ（AND）
+//  || または(OR)&&条件式||条件式)
+//｛
+//｝
+
+// switch....case/default
+// switch(式)
+
+// switch(x)
+//   case1:
+//     y=1
+//   case 2:
+//    y=10
+//    break
+//   case 3
+//     default
+
+// if(x==1 && y>10000)  
+//  {
+
+ //  }
+
+
+// if(x==1)
+//  {
+//   if(y>10000)  
+//   {
+//  
+//}
+
+//  三項演算子
+//  条件式
+
+//制御文  
+//条件分岐 if~eise, switch
+//ループ構造、繰り返し制御 for/while
+
+// for　（初期化式let i=0；条件式   i<100；加算式 //i++）  
+for (let i=1, j=10 ; i<10; i+=2, j-- )     
+  {
+    document.write( i + "<BR>");  
+    document.write( j + "<BR>");
+  }
+
+// break / continue  
+let i=0;
+let flag=true;
+while (flag)
+
+{
+  i++;
+  if( i==5 ) flag=false;
+  document.write(i + "<BR>");
+}
+
+// {
+//  命令文；
+//  }
+//条件文
+// let i=0;
+//　while（条件文 i<100　データの終わりがくるまで）
+//   {
+//     x+=i;
+//   }
+
+  </script>
+</body>
+</HTML>
